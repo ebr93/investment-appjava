@@ -44,12 +44,12 @@ img {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr 80px;
   grid-template-areas: 
-  "header header"
-  "left-main right-main"
-  "footer footer";
+  "header"
+  "main"
+  "footer";
   row-gap: 15px;
   column-gap: 15px;
 }
@@ -65,32 +65,81 @@ img {
 .logo {
   color: white;
   font-size: 2rem;
-  margin-left: 80px;
+  margin-left: 16%;
+  font-weight: bolder;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: minmax(150px, 400px) minmax(150px, 400px);
+  grid-template-areas: 
+  "left-main right-main";
+  column-gap: 15px;
 }
 
 .left-main {
   grid-area: left-main;
   margin-left: 15px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
   height: 250px;
-  position:-webkit-sticky;
-  position: sticky;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-self: center;
+  align-self: center;
 }
+
+.text-lines {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 15px 0px;
+  height: 250px;
+}
+
+.line-one {
+  flex: 2;
+}
+
+.line-two {
+  flex: 1;
+}
+
+.left-bottom {
+  margin-top: 30px;
+  height: 200px;
+  background: url(../images/safePiggy.png);
+  padding-left: 30px;
+  padding-right: 30px;
+  background-repeat:no-repeat;
+  background-size: 250px;
+  background-position: center;
+  position: relative;
+}
+
 
 .right-main {
   grid-area: right-main;
   margin-right: 15px;
-  /* overflow: scroll; */
+  height: 450px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .right-content {
   margin: 10px;
-  height:fit-content;
   width: 200px;
   color: bisque;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
