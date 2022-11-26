@@ -1,6 +1,7 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './styles/style.css';
 
+/*
 function component() {
   const element = document.createElement('div');
 
@@ -10,7 +11,8 @@ function component() {
 
   return element;
 }
+*/
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
 
 console.log('1 2 3');
