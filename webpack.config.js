@@ -48,9 +48,24 @@ module.exports = {
   },
   plugins: [
       new HtmlWebpackPlugin({
-        title: 'Webpack App',
+        title: 'Home',
         filename: 'index.html',
         template: 'src/template.html',
+    }),
+      new HtmlWebpackPlugin({
+        title: 'Sign Up',
+        filename: 'signup.html',
+        template: 'src/signuptemplate.html',
+    }),
+      new HtmlWebpackPlugin({
+        title: 'Sign In',
+        filename: 'signin.html',
+        template: 'src/signintemplate.html',
+    }),
+      new HtmlWebpackPlugin({
+        title: 'Dashboard',
+        filename: 'dashboard.html',
+        template: 'src/dashboard.html',
     }),
   ],
 };
