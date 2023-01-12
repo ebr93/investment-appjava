@@ -30,6 +30,8 @@ body {
     --large-spacing: 20px;
     --medium-spacing: 10px;
     --small-spacing: 5px;
+    --black-detail: #212529;
+    --black-background: #15191e;
     --blue-color: #91b2fd;
     --main-color: #ccd0f6;
     --button-color: #f593b7;
@@ -64,11 +66,25 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: bolder;
+}
+
+.logo-index {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 50%;
+}
+
+.header-bttn {
+  width: 10%;
+}
+
+.header-bttn-index {
 }
 
 .main {
@@ -357,7 +373,7 @@ img {
 }
 
 .form-content {
-  flex: 1;
+  margin: 10px;
 }
 
 .text-lines-two-sign {

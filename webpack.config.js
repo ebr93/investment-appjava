@@ -51,21 +51,25 @@ module.exports = {
         title: 'Home',
         filename: 'index.html',
         template: 'src/template.html',
+        scriptLoading: 'defer',
     }),
       new HtmlWebpackPlugin({
         title: 'Sign Up',
         filename: 'signup.html',
         template: 'src/signuptemplate.html',
+        scriptLoading: 'defer',
     }),
       new HtmlWebpackPlugin({
         title: 'Sign In',
         filename: 'signin.html',
         template: 'src/signintemplate.html',
+        scriptLoading: 'defer',
     }),
       new HtmlWebpackPlugin({
         title: 'Dashboard',
         filename: 'dashboard.html',
-        template: 'src/dashboard.html',
+        template: 'src/dashboardtemplate.html',
+        scriptLoading: 'defer',
     }),
   ],
 };
