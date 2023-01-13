@@ -30,6 +30,7 @@ body {
     --large-spacing: 20px;
     --medium-spacing: 10px;
     --small-spacing: 5px;
+    --font-white: #d1d4dc;
     --black-detail: #212529;
     --black-background: #15191e;
     --backup-background: #3870c5;
@@ -68,16 +69,19 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+  width: 1312px;
+  justify-self: center;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bolder;
+  width: 50%;
 }
 
 .logo-index {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bolder;
   width: 50%;
 }
@@ -154,22 +158,22 @@ img {
 
 .line-one {
   flex: 2;
-  font-size: 1.8rem;
+  font-size: 29px;
 }
 
 .line-two {
   flex: 1;
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
 .line-three {
-  font-size: 1.2rem;
+  font-size: 20px;
   flex: auto;
 }
 
 .line-four {
   flex: auto;
-  font-size: 1.7rem;
+  font-size: 27px;
   font-weight: bold;
 }
 
@@ -252,7 +256,7 @@ img {
   margin-left: 10px;
   background-color: #3870c5;
   padding: 7px;
-  font-size: .9rem;
+  font-size: 15px;
   color: #f7f7f7;
 }
 
@@ -270,7 +274,7 @@ img {
 
 }
 
-/* Sign Up and Sign In  */
+/*** SIGN UP AND SIGN IN ***/
 .wrapper-sign {
   display: grid;
   width: 100vw;
@@ -295,7 +299,7 @@ img {
 }
 
 .logo-sign {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: bolder;
 }
 
@@ -303,19 +307,20 @@ img {
   grid-area: main;
   height: 552px;
   display: grid;
-  grid-template-columns: minmax(624px, 1fr) minmax(400px, 40vw);
-  grid-template-areas: "left-main right-main";
+  grid-template-columns: minmax(624px, 800px) minmax(400px, 512px);
+  grid-template-areas: "left-main-sign right-main-sign";
   column-gap: 15px;
-  background: #f7f7f7;
+  /*  background: var(--backup-detail); */
   margin: 0px 20px 0px 20px;
   border-radius: 30px;
-  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+  justify-self: center;
+  /* box-shadow: 0 10px 20px -8px rgb(0 0 0 */
 }
 
 .left-main-sign {
-  grid-area: left-main;
+  grid-area: left-main-sign;
   /* height: 450px; */
-  /* padding: 20px 20px 20px 35px; */
+  padding: 20px 20px 20px 35px;
   display: flex;
   flex-direction: column;
   background-image: url(../images/background5.jpg);
@@ -324,8 +329,7 @@ img {
   background-position: center;
   position: relative;
   border-radius: 30px;
-  box-shadow: 0 10px 20px -8px rgba(52, 38, 38, 0.7);
-  background-color: var(--backup-detail);
+  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
 }
 
 .left-picture-sign {
@@ -339,13 +343,13 @@ img {
 }
 
 .right-main-sign {
-  grid-area: right-main;
+  grid-area: right-main-sign;
   padding: 20px;
   height: 550px;
   align-self: center;
   background-color: var(--backup-detail);
-  border-radius: 15px;
-  /*box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);*/
+  border-radius: 30px;
+  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
   display: flex;
   flex-direction: column;
   color: #222222;
@@ -360,7 +364,7 @@ img {
 }
 
 .right-content-sign {
-  font-size: calc(1.625rem + 0.1vw);
+  font-size: 27px;
 }
 
 .right-image-one-sign {
@@ -373,7 +377,7 @@ img {
 }
 
 .form {
-  font-size: calc(1.225rem + 0.1vw);
+  font-size: 22px;
   flex: auto;
   display: flex;
   flex-direction: column;
@@ -447,11 +451,10 @@ img {
 
 .right-main-dp {
   grid-area: right-dp;
+  height: 500px;
   padding: 20px 35px 20px 20px;
   border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  align-self: center;
   box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
 }
 
